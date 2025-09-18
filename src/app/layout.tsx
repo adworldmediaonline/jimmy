@@ -16,6 +16,12 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.jimmyasija.in'),
+  alternates: {
+    canonical: '/',
+  },
+  verification: {
+    google: ['0OdkVwES4uKQXG8utyXrkDAbu9ySyokzJKn2OWwvvzc'],
+  },
 };
 
 export default function RootLayout({
