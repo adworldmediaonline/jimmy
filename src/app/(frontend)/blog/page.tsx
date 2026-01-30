@@ -5,6 +5,15 @@ import { getBlogs } from '@/lib/server/blog';
 import { Film, Newspaper, Star } from 'lucide-react';
 import { Suspense } from 'react';
 import { BlogWithCategory } from '../../../lib/types/blog';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Blog',
+  description: 'Blog',
+  alternates: {
+    canonical: '/blog',
+  },
+};
 
 export default async function BlogPage() {
   return (

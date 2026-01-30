@@ -2,7 +2,16 @@ import FeatureCard from '@/components/feature-card';
 import Section from '@/components/section';
 import { Button } from '@/components/ui/button';
 import { Award, Eye, Film, Heart, Target } from 'lucide-react';
+import { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'About Jimmy Asija',
+  description: 'About Jimmy Asija',
+  alternates: {
+    canonical: '/about',
+  },
+};
 
 const visionMission = [
   {
